@@ -125,10 +125,12 @@ export default function SignInSide() {
     }
 
     return (
-        <Grid container component="main" className={classes.root}>
+        <Grid container component="main" className={classes.root} alignItems="center">
             <CssBaseline />
-            <Grid item xs={false} sm={4} md={7} className={classes.image} />
-            <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+            <Grid item xs={false} sm={4} md={7} lg={7}>
+                <img src="/images/logo.png"></img>
+            </Grid>
+            <Grid item xs={12} sm={8} md={5} lg={5} component={Paper} elevation={6} square>
                 <div className={classes.paper}>
                     <Avatar className={classes.avatar}>
                         <LockOutlinedIcon />

@@ -19,7 +19,7 @@ function App() {
     return (
         <div className="App" className={classes.root}>
             <header className="App-header">
-                <img style={{ width: "150px", height: "150px" }} src="/images/only_logo.jpg" className="App-logo" alt="logo" />
+                <img style={{ width: "150px", height: "200px" }} src="/images/only_logo.jpg" className="App-logo" alt="logo" />
             </header>
         </div>
     );

@@ -13,7 +13,7 @@ export default function SocialShare() {
                     <SocialIcon network="twitter" url="http://twitter.com/skillaid1" />
                 </Grid>
                 <Grid item xs={3} md={3} sm={3} lg={3}>
-                    <SocialIcon network="linkedin" url="http://linkedin.com/in/jaketrent" />
+                    <SocialIcon network="linkedin" url="https://www.linkedin.com/company/skillaid" />
                 </Grid>
                 <Grid item xs={3} md={3} sm={3} lg={3}>
                     <SocialIcon network="facebook" url="https://m.facebook.com/SkillAidworkshops/" />

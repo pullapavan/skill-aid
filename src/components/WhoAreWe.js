@@ -3,6 +3,8 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Mission from './Mission'
 import Vission from './Vission'
+import CoreValues from './CoreValues'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -14,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "Lucida Console, Courier New monospace",
         color: "blue"
     },
-    background : {
-        backgroundImage : "url('/images/mission_vision.jpg')"
+    background: {
+        backgroundImage: "url('/images/mission_vision.jpg')"
     }
 
 }));
@@ -27,7 +29,7 @@ export default function WhoAreWe() {
     return (
         <React.Fragment>
             <Grid container direction="column"
-                justify="center" 
+                justify="center"
                 alignItems="center" spacing={2}>
                 <Grid item xs={12} md={12} sm={12}>
                     <h1><span className={classes.custom_header_red}>Who</span> <span className={classes.custom_header_blue}>Are</span> <span className={classes.custom_header_red}>We?</span></h1>

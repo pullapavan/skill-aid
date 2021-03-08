@@ -9,6 +9,7 @@ import { useCustomStyles } from "../utils/styles";
 import SocialShare from './SocialShare';
 import InstaPosts from './InstaPosts';
 import Testimonials from './Testimonials';
+import Queries from './Queries';
 
 export default function Home() {
 
@@ -24,19 +25,22 @@ export default function Home() {
                 </Grid>
             </Grid>
             <CssBaseline />
-            <Grid container direction="column"
-                justify="center" className={classes.home_section2_background}
-                alignItems="center" spacing={1}>
-                <Grid item xs={12} md={12} sm={12}>
-                    <WhoAreWe></WhoAreWe>
-                </Grid>
-            </Grid>
+            
 
             <Grid container direction="column"
                 justify="center"
                 alignItems="center" spacing={1}>
                 <Grid item xs={12} md={12} sm={12}>
                     <ImageCards></ImageCards>
+                </Grid>
+            </Grid>
+            <CssBaseline />
+
+            <Grid container direction="column" className={classes.query_back}
+                justify="center"
+                alignItems="center" spacing={1}>
+                <Grid item xs={12} md={12} sm={12}>
+                    <Queries></Queries>
                 </Grid>
             </Grid>
 
@@ -79,4 +83,25 @@ export default function Home() {
             </Grid>
         </React.Fragment>
     )
+}
+
+
+function increase(){
+    var $rangeInput = $('.range input'),
+    var value =  $rangeInput.val();
+    if(value == 4){
+       return;
+    }
+    $rangeInput.val(value + 1).trigger('input');
+
+}
+
+function decrese(){
+    var $rangeInput = $('.range input'),
+    var value =  $rangeInput.val();
+    if(value == 0){
+       return;
+    }
+    $rangeInput.val(value - 1).trigger('input');
+
 }

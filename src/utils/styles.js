@@ -6,6 +6,17 @@ const radialGold = "radial-gradient(#eaca08, transparent)"
 const techback = "repeating-linear-gradient(255deg, #d3de2e24, transparent 100px)"
 
 export const useCustomStyles = makeStyles((theme) => ({
+    query_back: {
+        minHeight: "45vh",
+        background: "#d4a271e3",
+        fontFamily: "cursive",
+        color: "white"
+    },
+    list_root: {
+        width: '100%',
+        maxWidth: 360,
+        backgroundColor: theme.palette.background.paper,
+    },
     testimonial: {
         width: "100%",
         border: "1px solid #00000087",
@@ -21,7 +32,7 @@ export const useCustomStyles = makeStyles((theme) => ({
         padding: "20px"
     },
     tech_back: {
-        background: radialblue
+        // background: radialblue
     },
     social_background: {
         background: radialgold

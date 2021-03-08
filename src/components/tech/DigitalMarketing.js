@@ -18,9 +18,10 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import StarIcon from '@material-ui/icons/Star';
+import TechBanner from './utils/TechBanner';
+import TechHeading from './utils/TechHeading';
 
 
 
@@ -29,25 +30,11 @@ export default function DigitalMarketing() {
 
     return (
         <React.Fragment>
-            <Grid container direction="column" className={classes.white_background}
-                justify="center"
-                alignItems="center" spacing={1}>
-                <Grid item xs={12} md={12} sm={12}>
-                    <Carousel>
-                        <div>
-                            <img src="/images/g3.jpg" />
-                        </div>
-                    </Carousel>
-                </Grid>
-            </Grid>
+
+            <TechBanner imgUrl="/images/digital_marketing_main.png"></TechBanner>
             <CssBaseline />
-            <Grid container direction="column" className={classes.white_background}
-                justify="center"
-                alignItems="center" spacing={1}>
-                <Grid item xs={12} md={12} sm={12}>
-                    <h1>Course Details</h1>
-                </Grid>
-            </Grid>
+            <TechHeading course="Digital Marketing"></TechHeading>
+
             <Grid container direction="column" className={classes.white_background}
                 justify="center"
                 alignItems="center" spacing={1}>
